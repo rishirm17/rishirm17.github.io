@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* Global dark theme with futuristic design */
+        body {
+            background: linear-gradient(135deg, #0b0b15, #1a1a2e);
+            color: #dcdcdc;
+        }
+        .profile-pic {
+            position: absolute;
+            top: 80px;
+            left: 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #00d1ff;
+            overflow: hidden;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Navbar */
+        .navbar {
+            background-color: #1a1a2e;
+        }
+        .navbar-brand, .nav-link {
+            color: #00d1ff !important;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #2b2b3d);
+            color: #00d1ff;
+            padding: 5rem 0;
+        }
+
+        /* About Section */
+        #about {
+            background: linear-gradient(135deg, #0b0b15, #1a1a2e);
+            color: #dcdcdc;
+            padding: 3rem 0;
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+        }
+        #about h2 {
+            color: #00d1ff;
+        }
+           /* Skills Section */
+        #skills {
+            background: linear-gradient(135deg, #1a1a2e, #2b2b3d);
+            color: #dcdcdc;
+            padding: 3rem 0;
+        }
+        #skills h2 {
+            color: #00d1ff;
+        }
+        #skills .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        #skills .skill {
+            background-color: #0b0b15;
+            padding: 0.5rem 1rem;
+            border: 1px solid #00d1ff;
+            border-radius: 20px;
+            color: #dcdcdc;
+            font-size: 1rem;
+        }
+        /* Projects Section */
+        #projects-carousel {
+            background: linear-gradient(135deg, #1a1a2e, #2b2b3d);
+            color: #cfe8ee;
+            padding: 2rem 0;
+        }
+        .carousel-item h5 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            color: #00d1ff;
+        }
+        .carousel-item p {
+            font-size: 1.1rem;
+            color: #dcdcdc;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: linear-gradient(135deg, #0b0b15, #1a1a2e);
+            color: #dcdcdc;
+            padding: 3rem 0;
+        }
+        #contact h2 {
+            color: #00d1ff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a2e;
+            color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+     <!-- Profile Picture -->
+    <div class="profile-pic">
+        <img src="profile.png" alt="Profile Picture">
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/tempresumerishi.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>Rishi Mohale</h1>
+            <p class="lead">Software Engineer | Problem Solver</p>
+            <p>rishimohale@gmail.com | +918955135363 | www.linkedin.com/in/rishimohale </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About Me</h2>
+            <p class="text-center">I am a software engineer with robust problem-solving skills and highly motivated guy with a strong foundation in software 
+                engineering and programming principles.With expertise in Java, Spring Boot, and modern web technologies, I create intuitive solutions that solve real-world problems. Always learning and evolving, I’m committed to delivering clean, efficient code and impactful user experiences. Let’s build something amazing together!.</p>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <div class="skills-list">
+                <span class="skill">Java</span>
+                <span class="skill">SpringBoot</span>
+                <span class="skill">C</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">Git</span>
+                <span class="skill">Thymeleaf</span>
+                <span class="skill">Flutter</span>
+                <span class="skill">Dart</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">DSA</span>
+                <span class="skill">DBMS</span>
+            </div>
+        </div>
+    </section>
+
+     <!-- Projects Section -->
+     <section id="projects-carousel" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h5>Student Management System</h5>
+                        <p>A robust application built using Java Spring Boot and Thymeleaf, enabling efficient management of student records and activities.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h5>Chat Web App</h5>
+                        <p>A real-time chat application developed with Java Spring Boot, featuring seamless communication and secure messaging.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h5>Spotify Clone UI</h5>
+                        <p>A visually appealing UI for a Spotify-like application, designed using Flutter and Dart for cross-platform compatibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form action="/api/contact" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
