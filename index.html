@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
+    
     <style>
         /* Global dark theme with futuristic design */
         body {
@@ -136,7 +137,7 @@
         <div class="container">
             <h1>Rishi Mohale</h1>
             <p class="lead">Software Engineer | Problem Solver</p>
-            <p>rishimohale@gmail.com | +918955135363 | www.linkedin.com/in/rishimohale </p>
+            <p>rishimohale@gmail.com | +918955135363 | www.linkedin.com/in/rishimohale | https://github.com/rishirm17  </p>
         </div>
     </header>
 
@@ -217,6 +218,14 @@
             </form>
         </div>
     </section>
+
+    <form action="/api/contact" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
